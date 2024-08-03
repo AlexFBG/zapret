@@ -23,6 +23,8 @@
 
     cd zapret
     ./install_bin.sh
+и
+
     ./install_prereq.sh
 
 Выбираем тип файрволла 1
