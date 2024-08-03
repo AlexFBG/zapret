@@ -1,4 +1,4 @@
-## Настройка zapret от bol-van на Keenetic
+# Настройка zapret от bol-van на Keenetic
 
 Инструкция по установке zapret от bol-van на Keenetic предполагает, что OPKG Entware уже установлен.
 Оригинал статьи находится по ссылке https://telegra.ph/Nastrojka-zapret-ot-bol-van-na-Keentic-04-27
