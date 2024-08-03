@@ -5,7 +5,7 @@
 Ссылка на автора zapret на гитхабе - https://github.com/bol-van/zapret
 
 **Обязательно любой сторонний DNS, желательно DNS-over-HTTPS, DoH**
-![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/dns.png?token=GHSAT0AAAAAACVUP3GVVJGO7BPWY2SCJS7YZVNXNVA)
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/dns.png)
 
 Предварительно установите и настройте opkg на keenetic  
   
