@@ -6,6 +6,7 @@
 
 **Обязательно любой сторонний DNS, желательно DNS-over-HTTPS, DoH**
 ![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/dns.png?token=GHSAT0AAAAAACVUP3GVVJGO7BPWY2SCJS7YZVNXNVA)
+
 Предварительно установите и настройте opkg на keenetic  
   
 Устанавливаем пакеты:
@@ -24,20 +25,23 @@
     ./install_prereq.sh
 
 Выбираем тип файрволла 1
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/5abb8ab1706586199ac2119cc42c5044d33d5ecd/img/s1.png?token=GHSAT0AAAAAACVUP3GUOYDXTQ5ZOSV45DBCZVNV6BQ)
-    your choice (default : iptables) : 1
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s1.png?token=GHSAT0AAAAAACVUP3GVJRGNL6PVTINDQSXOZVNXRJQ)
+
+your choice (default : iptables) : 1
+
 Из скрипта выходим Enter-ом
 Запускаем проверку провайдера (должны быть отключены все блокировки)
 
     ./blockcheck.sh
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s2.png?token=GHSAT0AAAAAACVUP3GUQYEHZVC5EKG3X2RAZVNV7EA)
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s2.png?token=GHSAT0AAAAAACVUP3GUZOFL5DJG3RKO6QJMZVNXSGA)
 
 Оставляем все по умолчанию (проходим Enter), на вопрос типа сканирования выбираем standart
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s3.png?token=GHSAT0AAAAAACVUP3GV7L6DIR4DSDTGDNMQZVNWAVQ)
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s3.png?token=GHSAT0AAAAAACVUP3GUERY7OPX6G57MXUGUZVNXS4A)
 При выборе сайта для сканирования, выбрать лучше из предложенных (rutracker.org) и не выбирать youtube.com и googlevideo.com, т.к. данные сайты не заблокированы, а сканер не тестирует сайты на скорость. 
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s4.png?token=GHSAT0AAAAAACVUP3GUSCSYPKPTHJ4MWQRAZVNWETA)
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s4.png?token=GHSAT0AAAAAACVUP3GVAKSNHKPQYC4XSULWZVNXUQQ)
 По итогу получится что то вроде этого
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s5.png?token=GHSAT0AAAAAACVUP3GVWGSQAD3P34V7DKTOZVNWFAQ)
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/s5.png?token=GHSAT0AAAAAACVUP3GVIDAF6QSKJ2JHXXKIZVNXVFA)
 Как видим, найденные стратегии будут отображаться как !!!!! AVAILABLE !!!!!
 В конце скрипт предложит стратегию по обходу провайдера, можно выбрать ее но учитывая следующее: обход блокировки Youtube использует стратегию split2
 Поэтому запоминаем, записываем в Блокнот:
@@ -46,32 +50,55 @@
 Начинаем установку скрипта:
 
     ./install_easy.sh
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i1.png?token=GHSAT0AAAAAACVUP3GV3O5YNBJFEY4KPAHKZVNWJ3Q)
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i1.png?token=GHSAT0AAAAAACVUP3GVAOGLUWKU3ZDI2MLQZVNXVYQ)
+
 На предупреждения отвечаем Y
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i2.png?token=GHSAT0AAAAAACVUP3GUSCTCU7TZB2ABPY3UZVNWLBA)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i2.png?token=GHSAT0AAAAAACVUP3GUCFSCDFIZFITYLICEZVNXWPA)
+
 Папку по умолчанию оставляем как есть, отвечаем Y
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i3.png?token=GHSAT0AAAAAACVUP3GVFTGYBK2D7HUJPTJSZVNWL6A)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i3.png?token=GHSAT0AAAAAACVUP3GVAPO5D5XCO2N6YIWKZVNXXHA)
+
 Пишет, что нужно будет вручную сделать автозапуск, отвечаем Y
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i4.png?token=GHSAT0AAAAAACVUP3GU7TKL6J4AHYXKRVWWZVNWNDA)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i4.png?token=GHSAT0AAAAAACVUP3GVC55AUGG2A3LXKDLWZVNXYEA)
+
 Выбираем iptables, жмем 1
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i5.png?token=GHSAT0AAAAAACVUP3GVQCG6WX7YSNVMY5A4ZVNWN5Q)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i5.png?token=GHSAT0AAAAAACVUP3GUUP7FZX4QLAXIROE4ZVNXYWQ)
+
 Спрашивает про поддержку IP6, не используем, поэтому N
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i6.png?token=GHSAT0AAAAAACVUP3GUVJHFRJ47ZJHAKWXYZVNWO4Q)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i6.png?token=GHSAT0AAAAAACVUP3GUYPAPS3HKFFBFK2PGZVNXZJA)
+
 Выбираем nfqws, жмем 3
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i7.png?token=GHSAT0AAAAAACVUP3GUCH4FOQVJ5OXYEFS2ZVNWPYA)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i7.png?token=GHSAT0AAAAAACVUP3GVTCCK3E44JGNQYPXKZVNX2HA)
+
 Предлагает отредактировать файл конфигурации. Здесь внимание! Помните мы сканировали и определяли стратегию? Поэтому жмем Y и попадаем в редактор (в зависимости какой у вас установлен по умолчанию, nano или mcedit). Редактируем верхнюю строчку и вставляем свои параметры между кавычками:
 
     --dpi-desync=fake,split2 --dpi-desync-ttl=5
 Вставлять в окно SSH можно сочетанием клавиш: Shift+Insert
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i8.png?token=GHSAT0AAAAAACVUP3GUEIWMTMD77SKFO5J6ZVNWTWA)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i8.png?token=GHSAT0AAAAAACVUP3GUNSLQ2WZGXCKTE7SIZVNX27Q)
+
 Сохраняем файл конфигурации, идем далее
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i9.png?token=GHSAT0AAAAAACVUP3GUBBWYBGHUIQGVR6OQZVNWU4A)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i9.png?token=GHSAT0AAAAAACVUP3GV4RQMYLC6KJIVMFVCZVNX3PQ)
+
 Предлагает подключиться к интерфейсу WAN. Определить интерфейс можно запустив вторую копию ssh и ввести команду ifconfig. Ищем интерфейс с IP провайдера
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i9_1.png?token=GHSAT0AAAAAACVUP3GUGQGSFC6YK3VUMIN6ZVNWZIQ)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i9_1.png?token=GHSAT0AAAAAACVUP3GVOE66QGZAR4MPCZ5WZVNX4BQ)
+
 Выбираем 11
+
 После этого скрипт предложит выбрать стратегию обхода для выбранного MODE, выбираем get_antizapret_domains.sh (он по умолчанию). Произойдет скачивание листа заблокированных сайтов, установка правил. По итогу получим следующее
-![enter image description here](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i10.png?token=GHSAT0AAAAAACVUP3GUQKLA4RHV3WEALJKCZVNW2IA)
+
+![image](https://raw.githubusercontent.com/AlexFBG/zapret/master/img/i10.png?token=GHSAT0AAAAAACVUP3GVQBBN2GIAPF7ODPH2ZVNX4ZQ)
+
 Здесь имеется предупреждение, что установка не закончена и необходимо вручную сделать настройки. Жмем Enter и выходим в командную строку. Делаем настройки.
+
 Удаляем ненужное.
 
     cd  
